@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and List</title>
+    <style>
+         th, td{
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover{
+            background-color: #d6eeee;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <caption>Family Data</caption>
+        <!-- We can add a caption to a table using <caption>tag -->
+            <colgroup>
+                <col span="2">
+                <col span="1" style="background-color: #d6eeee;">
+                <!-- colgroup element should be used as a container for the column specification
+                Each group is specified with a <col> element
+                Span attribute specifies how many column that get style.
+                Style attribute specifies the style. -->
+                <col span="1" style="visibility: collapse;">
+                <!-- You can hide columns with the visibility: collapse property -->
+            </colgroup>
+        <tr>
+            <th>First Name</th>
+            <td>Abishek</td>
+            <td>Aanchal</td>
+            <td>Aarogya</td>
+        </tr>
+        <tr>
+            <th>Middle Name</th>
+            <td>Kumar</td>
+            <td>Kumari</td>
+            <td>Raja</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>Katwal</td>
+            <td>Bhandari</td>
+            <td>Bhandari</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Gauradaha</td>
+            <td>Damak</td>
+            <td>Pahad</td>
+        </tr>
+     </table>
+     <br>
+     <p>Unordered HTML List</p>
+     <p>An unorderd list starts with the ul tag.</p>
+     <p>The list items will be marked with bullets</p>
+     <!-- li defines a list item  -->
+     <ul>
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+     </ul>
+     <p>Orderd HTML List</p>
+     <p>An unorderd list starts with the ol tag.</p>
+     <p>The list items will be marked with numbers</p>
+     <ol>
+        <li>Aanchal</li>
+        <li>Aarogya</li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+     <h2>HTML Description List</h2>
+     <!-- dl defines a Description List
+     dt defines a term in a Description List
+     dd describes the item in a description List  -->
+     <dl>
+        <dt>Aanchal</dt>
+        <dd>-She is a Girl</dd>
+        <dt>Aarogya</dt>
+        <dd>-He is a Boy</dd>
+        <dt>Abishek</dt>
+        <dd>-He is a Boy</dd>
+     </dl>
+     <h2>Unordered HTML list- Choose list item maker</h2>
+     <!-- list-style-type property is used to define the style of item maker
+     disc, circle, square, none -->
+     <ul style="list-style: disc;">
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+     </ul>
+     <ul style="list-style: circle;">
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+     </ul>
+     <ul style="list-style: square;">
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+     </ul>
+     <ul style="list-style: none;">
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+     </ul>
+     <h2>Nested HTML Lists</h2>
+     <!-- list inside List -->
+     <ul>
+        <li>Apple</li>
+        <li>Ball
+            <ul>
+                <li>Football</li>
+                <li>Cricker Ball</li>
+                <li>Volleyball</li>
+            </ul>
+        </li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+     </ul>
+     <h2>Ordered HTML Lists-The Type Attribute</h2>
+     <!-- The type attribute of ol tag defines the type of the list item maker
+      type 1= numbered
+      type A= uppercase letters
+      type a= lowecase letters
+      type I= uppercase roman numbers
+      type i= lowercase roman number -->
+     <ol type="1">
+        <li>Aanchal</li>
+        <li>Aarogya</li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+     <ol type="A">
+        <li>Aanchal</li>
+        <li>Aarogya</li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+     <ol type="a">
+        <li>Aanchal</li>
+        <li>Aarogya</li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+     <ol type="I">
+        <li>Aanchal</li>
+        <li>Aarogya</li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+     <ol type="i">
+        <li>Aanchal</li>
+        <li>Aarogya</li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+     <h2>Control List Counting</h2>
+     <!-- By default, an ordered list will start counting from 1.
+     Start attribute starts counting from specified number -->
+     <ol start="20">
+        <li>Aanchal</li>
+        <li>Aarogya</li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+     <h2>Nested Ordered HTML List</h2>
+     <ol>
+        <li>Aanchal</li>
+        <li>Aarogya
+            <ol>
+                <li>Bhandari</li>
+                <li>Bahadur</li>
+                <li>Raja</li>
+            </ol>
+        </li>
+        <li>Abishek</li>
+        <li>Katwal</li>
+     </ol>
+</body>
+</html>
